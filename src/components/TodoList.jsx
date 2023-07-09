@@ -20,7 +20,10 @@ export const TodoList = ({taskList, setTaskList}) =>{
     return(
         <div className='todoList'>
             <div className="todos">
-                {taskList.map((task, index) =>(
+                {/* ここのtodos divいる？ */}
+                {taskList.map((task, index) =>{
+                    return(
+                    // taskList配列をmap関数で取り出すループ構造
                     <div className={`todo ${task.completed ?"completed" : ""}`} key={index}>
                         <div className = "todoText">
                             <span>{task.text}</span>
@@ -34,7 +37,8 @@ export const TodoList = ({taskList, setTaskList}) =>{
                             </button>
                         </div>
                     </div>
-                ))}
+                    )
+                })}
             </div>
         </div>
     )

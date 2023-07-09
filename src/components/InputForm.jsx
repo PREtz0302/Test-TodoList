@@ -1,8 +1,10 @@
 import{useState} from'react';
 
 export const InputForm = ({taskList,setTaskList}) =>{
+    // inputTextを状態管理するためのhookにuseStateを使う
     const[inputText, setInputText] = useState("");
 
+    // submitボタンが押されるかsubmitされたときの処理
     const handleSubmit = (e) =>{
         e.preventDefault();
 

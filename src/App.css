@@ -9,7 +9,11 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom, rgb(231, 157, 238),rgb(135, 233, 126));
+  background: rgb(47, 69, 128);
+}
+
+.Title{
+  color:bisque;
 }
 
 header {

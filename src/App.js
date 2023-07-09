@@ -5,6 +5,7 @@ import{TodoList} from './components/TodoList';
 import "./App.css"
 
 function App() {
+  // taskListを状態管理するためのhookにuseStateを使う
   const [taskList, setTaskList] = useState([]);
 
   
