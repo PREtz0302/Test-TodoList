@@ -13,7 +13,6 @@ function App() {
       <InputForm taskList={taskList} setTaskList={setTaskList} />
       <TodoList taskList={taskList} setTaskList={setTaskList} />
     </div>
-    // merge Test
   );
 }
 
