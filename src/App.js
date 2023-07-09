@@ -15,7 +15,6 @@ function App() {
       <TodoList taskList={taskList} setTaskList={setTaskList} />
       {/* ~~.jsx */}
     </div>
-    // merge Test
   );
 }
 
