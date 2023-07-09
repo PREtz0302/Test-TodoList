@@ -12,6 +12,7 @@ function App() {
       <Title />
       <InputForm taskList={taskList} setTaskList={setTaskList} />
       <TodoList taskList={taskList} setTaskList={setTaskList} />
+      {/* ~.jsx */}
     </div>
   );
 }
