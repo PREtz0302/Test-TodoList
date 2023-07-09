@@ -7,11 +7,13 @@ import "./App.css"
 function App() {
   const [taskList, setTaskList] = useState([]);
 
+  
   return(
     <div className = "body">
       <Title />
       <InputForm taskList={taskList} setTaskList={setTaskList} />
       <TodoList taskList={taskList} setTaskList={setTaskList} />
+      {/* ~~.jsx */}
     </div>
   );
 }
