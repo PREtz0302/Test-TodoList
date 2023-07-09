@@ -1,5 +1,4 @@
 import{useState} from'react';
-import { dom } from '@fortawesome/fontawesome-svg-core';
 
 export const InputForm = ({taskList,setTaskList}) =>{
     const[inputText, setInputText] = useState("");
@@ -7,7 +6,7 @@ export const InputForm = ({taskList,setTaskList}) =>{
     const handleSubmit = (e) =>{
         e.preventDefault();
 
-        if(inputText.length!=0){
+        if(inputText.length!==0){
             setTaskList([
                 ...taskList,
                 {

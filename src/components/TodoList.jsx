@@ -2,7 +2,7 @@ import React from 'react'
 
 export const TodoList = ({taskList, setTaskList}) =>{
     const handleDelete = (id) =>{
-        setTaskList(taskList.filter((task) =>task.id != id));
+        setTaskList(taskList.filter((task) =>task.id !== id));
     }
 
     const handleCompleted = (id) =>{
@@ -26,10 +26,10 @@ export const TodoList = ({taskList, setTaskList}) =>{
                             <span>{task.text}</span>
                         </div>
                         <div className="icons">
-                            <button>
+                            <button onClick={() => handleCompleted(task.id)}>
                             <i className="fa-solid fa-check"></i>
                             </button>
-                            <button>
+                            <button onClick={() => handleDelete(task.id)}>
                             <i className="fa-solid fa-trash"></i>
                             </button>
                         </div>
